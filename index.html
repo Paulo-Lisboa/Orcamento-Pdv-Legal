@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Venda de licenças e módulos do sistema PDV Legal. Personalize seu orçamento e envie diretamente para nosso comercial.">
+    <meta name="keywords" content="PDV, Licenças, Gestão Empresarial, PDV Legal, Módulos, Delivery, Fidelidade">
+    <meta name="author" content="CertTech">
+    <title>PDV Legal - Faça Seu Orçamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>PDV Legal</h1>
+            <p>Monte o seu orçamento de forma rápida e personalizada.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="selection-form">
+            <div class="container">
+                <h2>Escolha os módulos e planos.</h2>
+
+                <!-- Acordeões -->
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-button">Sistema PDV Legal</button>
+                        <div class="accordion-content">
+                            <form id="modules-form">
+                                <div class="form-group">
+                                    <label><input type="checkbox" value="99.90" data-label="PDV Legal Módulo Vendas"> PDV Legal Módulo Vendas (R$ 99,90)</label>
+                                </div>
+                                <div class="form-group">
+                                    <label>
+                                        <input type="checkbox" id="pdv-ponto-adicional-checkbox" data-label="PDV Legal Ponto Adicional" data-price="19.90"> 
+                                        PDV Legal Ponto Adicional (R$ 19,90 cada)
+                                    </label>
+                                    <input type="number" id="pdv-ponto-adicional-quantity" name="pdv-ponto-adicional" min="1" max="999" value="1" step="1" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label><input type="checkbox" value="49.90" data-label="Módulo Estoque"> Módulo Estoque (R$ 49,90)</label>
+                                </div>
+                                <div class="form-group">
+                                    <label><input type="checkbox" value="49.90" data-label="Módulo Fiscal"> Módulo Fiscal (R$ 49,90)</label>
+                                </div>
+                                <div class="form-group">
+                                    <label><input type="checkbox" value="49.90" data-label="Módulo Financeiro"> Módulo Financeiro (R$ 49,90)</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-button">Sistema Delivery Legal</button>
+                        <div class="accordion-content">
+                            <form>
+                                <div class="form-group">
+                                    <label><input type="checkbox" value="109.90" data-label="Plano Delivery 1"> Plano Delivery 1 - Até 20K Transacionado (R$ 109,90)</label>
+                                </div>
+                                <div class="form-group">
+                                    <label><input type="checkbox" value="164.90" data-label="Plano Delivery 2"> Plano Delivery 2 - de 20K a 40K Transacionados (R$ 164,90)</label>
+                                </div>
+                                <div class="form-group">
+                                    <label><input type="checkbox" value="219.90" data-label="Plano Delivery 3"> Plano Delivery 3 - Acima de 40K Transacionados (R$ 219,90)</label>
+                                </div>
+                                <div class="form-group">
+                                    <label><input type="checkbox" value="115.00" data-label="Delivery Legal Plus"> Delivery Legal Plus (R$ 115,00)</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-button">Outros Serviços</button>
+                        <div class="accordion-content">
+                            <form>
+                                <div class="form-group">
+                                    <label><input type="checkbox" value="198.45" data-label="Certificado Digital"> Certificado Digital (R$ 198,45)</label>
+                                </div>
+                                <div class="form-group">
+                                    <label><input type="checkbox" value="178.50" data-label="Fidelidade Legal"> Fidelidade Legal (R$ 178,50)</label>
+                                </div>
+                                <div class="form-group">
+                                    <label><input type="checkbox" value="165.00" data-label="Auto Atendimento Food"> Auto Atendimento Food (R$ 165,00)</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Total e botão de envio -->
+                <div class="total-price">
+                    Total: R$ <span id="total">0,00</span>
+                </div>
+                <a href="#" id="whatsapp-link" target="_blank" class="whatsapp-btn">Enviar Orçamento pelo WhatsApp</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 CertTech. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
